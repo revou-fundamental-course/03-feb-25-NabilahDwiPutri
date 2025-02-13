@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Buat judul -->
+    <h2>Konversi Suhu</h2>
+
+    <!-- Untuk buat label dan input angka -->
+    <div class="input-container"></div>
+    <label for="temperature" id="tempLabel">Celsius (°C):</label>
+    <input type="number" id="temperature">
+
+    <!-- Untuk tombol Konversi, Reset, Reserve -->
+    <div class="button-container">
+        <button onclick="convert()">Konversi</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="reverseMode()">Reverse</button>
+    </div>
+
+    <!-- Ketika dikonversi akan menampilkan hasil perhitungan -->
+    <h3>Hasil: <span id="result"></span></h3>
+    <p id="calculation"></p>
+
+    <div id="detailedExplanation"></div> <!-- Penjelasan perhitungan -->
+    <div id="tempExplanation"></div> <!-- Penjelasan ilmiah -->
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
